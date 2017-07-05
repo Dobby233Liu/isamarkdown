@@ -8,3 +8,4 @@
 2. Editing name of memespack.rar to WtF.bat
 (把memespack.rar改成WtF.bat)
 3. LOL HAVE FeN
+(秘密：试试运行WtF.bat)
