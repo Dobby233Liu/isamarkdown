@@ -2,7 +2,7 @@
 ## Let me know
 1. DL1: [link](#dl1)
 ## DL1
-
+- [Download](https://github.com/Dobby233Liu/isamarkdown/archive/dl1.zip)
 1. Editing name of WIN.ISO to wtf.dll
 (修改WIN.ISO这个文件的名字到wtf.dll)
 2. Editing name of memespack.rar to WtF.bat
